@@ -49,6 +49,116 @@
 
 /* skills section css */
 
+/* skills prject cs */
+.portfolio-section {
+  background: #f9f9f9;
+  padding-top: 100px;
+  padding-bottom: 90px; /* increased bottom space */
+}
+
+/* Headings */
+.sub-title {
+  color: #ff6b6b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Filter Buttons */
+.portfolio-filter ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px; /* a bit more gap below buttons */
+}
+.portfolio-filter li {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background: #eee;
+}
+.portfolio-filter .active,
+.portfolio-filter li:hover {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+/* Portfolio Card Styling */
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 220px; /* slightly increased height for better proportion */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  background: #fff;
+  margin-bottom: 30px; /* ✅ spacing between rows */
+}
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Overlay */
+.portfolio-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff; /* ✅ all text white now */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.4s ease;
+  transform: translateY(20px);
+}
+.overlay h4 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff; /* ✅ forced white color */
+}
+.overlay p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  color: #f2f2f2; /* ✅ soft white text */
+}
+
+/* ✨ Hover Effects ✨ */
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+}
+.portfolio-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+.portfolio-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* typings css */
+  #typingHeading {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+}
+
        /* Light Background Section */
 .services {
   background: #ffffff; /* light background */

@@ -42,6 +42,11 @@
 
         <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Font Awesome 6 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- aos library link -->
     </head>
     <body>
 
@@ -75,11 +80,11 @@
                             <a href="#" class="nav-link" data-scroll-nav="2" >My Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="3">Works</a>
+                            <a href="#" class="nav-link" data-scroll-nav="3">My Project</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="4">Blog</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="5">Contact</a>
                         </li>
@@ -99,7 +104,7 @@
   <div class="container">
     <!--Banner Content-->
     <div class="banner-caption">
-      <h1>Hi! I'm Abdul Wasay Ali</h1>
+     <h1 id="typingHeading">Hi! I'm Abdul Wasay Ali</h1>
       <p class="cd-headline clip mt-30">
         <span>Software Engineer | Web Developer</span><br>
         <span class="blc">Specialized in</span>
@@ -110,8 +115,7 @@
         </span>
       </p>
     </div>
-    
-
+  
     <div class="arrow bounce">
       <a class="fa fa-chevron-down fa-2x" href="#" data-scroll-nav="1"></a>
     </div>
@@ -149,34 +153,16 @@
                             <p>I'm always eager to learn, build, and collaborate. Currently looking for opportunities to work on projects, internships, and expand my network in the tech industry.</p>
                             <!--About Social Icons-->
                             <div class="social-icons">
-                               <a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-<a href="#"><i class="fab fa-github"></i></a>
+                               <a href="https://www.facebook.com/share/16UkcssCFn/"><i class="fab fa-facebook"></i></a>
+<a href="https://x.com/WasayAli1957728?t=2xm4HzrteL68q2AISbcDPQ&s=09"><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com/abdulwasayali09?igsh=MXd2bG00dzdmaDZyYw=="><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/abdul-wasay-ali-295480256/"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://github.com/WasayAli3105"><i class="fab fa-github"></i></a>
 
                             </div>
                          <span class="about-button">
     <a class="main-btn" href="assets/My Resume.pdf" id="cvBtn">Download Resume</a>
 </span>
-
-<script>
-document.getElementById('cvBtn').addEventListener('click', function(e){
-    e.preventDefault(); // link ka default behavior stop
-    const fileUrl = this.href;
-
-    // Download trigger
-    const a = document.createElement('a');
-    a.href = fileUrl;
-    a.download = 'Resume.pdf'; // downloaded file ka name
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-</script>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -316,129 +302,95 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
        
 
 
-        <!--Portfolio Section Start-->
-        <section class="portfolio pt-100 pb-70" data-scroll-index="3">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="heading text-center">
-                            <h6>Portfolio</h6>
-                            <h2>Work I Have Done</h2>
-                        </div>
-                        <div class="portfolio-filter text-center">
-                            <ul>
-                                <li class="sel-item" data-filter="*">All</li>
-                                <li data-filter=".design">Web Design</li>
-                                <li data-filter=".application">Applications</li>
-                                <li data-filter=".development">Development</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row portfolio-items">
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item application">
-                        <div class="item-content">
-                            <img src="images/portfolio/img-1.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6>Application</h6>
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="images/portfolio/img-1.jpg">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item design">
-                        <div class="item-content">
-                            <img src="images/portfolio/img-2.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6>Web Design</h6>
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="images/portfolio/img-2.jpg">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item development">
-                        <div class="item-content">
-                            <img src="images/portfolio/img-3.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6>Application</h6>
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="images/portfolio/img-3.jpg">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item design development">
-                        <div class="item-content">
-                            <img src="images/portfolio/img-4.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6>Development</h6>
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="images/portfolio/img-4.jpg">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item development application">
-                        <div class="item-content">
-                            <img src="images/portfolio/img-5.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6>Web Design</h6>
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="images/portfolio/img-5.jpg">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Portfolio Item-->
-                    <div class="col-lg-4 col-md-6 item application development">
-                        <div class="item-content">
-                            <img src="images/portfolio/img-6.jpg" alt="">
-                            <div class="item-overlay">
-                                <h6>Web Design</h6>
-                                <div class="icons">
-                                    <span class="icon link">
-                                        <a href="images/portfolio/img-6.jpg">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Portfolio Section End-->
+    <!-- Portfolio Section Start -->
+<section class="portfolio-section pt-100 pb-70" data-scroll-index="3">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="heading text-center mb-5">
+      <h6 class="sub-title">My Projects</h6>
+      <h2 class="main-title">Some of My Best Work</h2>
+      <p class="text-muted">Here are a few of my favorite projects that showcase my skills in design and development.</p>
+    </div>
 
-        <!--Blog Section Start-->
-        <section class="blogs pt-100 pb-100 bg-gray" data-scroll-index="4">
+    <!-- Filter Buttons -->
+    <div class="portfolio-filter text-center mb-4">
+      <ul>
+        <li class="filter-btn active" data-filter="*">All</li>
+        <li class="filter-btn" data-filter=".design">Web Design</li>
+        <li class="filter-btn" data-filter=".application">Applications</li>
+        <li class="filter-btn" data-filter=".development">Development</li>
+      </ul>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="row portfolio-items g-4">
+      <!-- <div class="col-lg-4 col-md-6 portfolio-item application">
+        <div class="portfolio-card">
+          <img src="assets/images/watch.png" alt="Project Image">
+          <div class="overlay">
+            <h4></h4>
+            <p></p>
+          </div>
+        </div>
+      </div> -->
+
+       <div class="col-lg-4 col-md-6 portfolio-item design">
+        <div class="portfolio-card">
+          <img src="assets/images/watch.png" alt="Project Image">
+          <div class="overlay">
+            <h4>Watches</h4>
+            <p>Responsive watch showcase built using HTML, CSS, and Bootstrap</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item design">
+        <div class="portfolio-card">
+          <img src="assets/images/historical.png" alt="Project Image">
+          <div class="overlay">
+            <h4>Historical Places</h4>
+            <p>Responsive website featuring famous landmarks using HTML, CSS, and Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item design">
+        <div class="portfolio-card">
+          <img src="assets/images/eletronic.png" alt="Project Image">
+          <div class="overlay">
+            <h4>Electronic Store</h4>
+            <p>Group project built with HTML, CSS, Bootstrap, JavaScript, and JSON for an online shop.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item development">
+        <div class="portfolio-card">
+          <img src="assets/images/courier.png" alt="Project Image">
+          <div class="overlay">
+            <h4>Courier Management</h4>
+            <p>Developed in PHP and MySQL for parcel tracking and admin management.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item development">
+        <div class="portfolio-card">
+          <img src="assets/images/E-Greetings.png" alt="Project Image">
+          <div class="overlay">
+            <h4>E-Greetings</h4>
+            <p>Dynamic website built with .NET Framework (ASP.NET MVC, C#) and SQL
+Server, offering birthday and wishes cards with admin panel control.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio Section End -->
+
+        <!-- Blog Section Start-->
+        <!-- <section class="blogs pt-100 pb-100 bg-gray" data-scroll-index="4">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
@@ -450,7 +402,6 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                 </div>
                 <div class="row">
                     <div class="owl-carousel owl-theme">
-                        <!--Blogs Item-->
                         <div class="blog-item">
                             <div class="blog-img">
                                 <a href='/single-blog'>
@@ -470,7 +421,6 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                                 </div>
                             </div>
                         </div>
-                        <!--Blogs Item-->
                         <div class="blog-item">
                             <div class="blog-img">
                                 <a href='/single-blog'>
@@ -490,7 +440,6 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                                 </div>
                             </div>
                         </div>
-                        <!--Blogs Item-->
                         <div class="blog-item">
                             <div class="blog-img">
                                 <a href='/single-blog'>
@@ -510,7 +459,6 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                                 </div>
                             </div>
                         </div>
-                        <!--Blogs Item-->
                         <div class="blog-item">
                             <div class="blog-img">
                                 <a href='/single-blog'>
@@ -540,8 +488,8 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Blog Section End-->
+        </section> -->
+        <!--Blog Section End -->
 
        
 
@@ -594,29 +542,29 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                     <div class="col-md-3 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
-                            <h5>Kalvin</h5>
-                            <p>lorem Ipsum donor sit.</p>
+                            <h5>Wasay</h5>
+                            <p>Software Engineer | Web Developer</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Phone No.</h5>
-                            <p>(+1) 123 456 7890</p>
+                            <p>+92 3110214934</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Email</h5>
-                            <p>info@example.com</p>
+                            <p>Wasay3105@gmail.com</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <!--Contant Item-->
                         <div class="contact-info">
                             <h5>Address</h5>
-                            <p>123 lorem ipsum New York, USA.</p>
+                            <p>14/15 C Area Liquatabad</p>
                         </div>
                     </div>
                 </div>
@@ -624,7 +572,7 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
                     <div class="col-md-12">
                         <hr>
                         <p class="copy pt-30">
-                            Kalvin &copy; 2024. All Right Reserved, Designed By Cosmos-Themes.
+                            Wasay &copy; All Right Reserved, Designed By Abdul Wasay Ali.
                         </p>
                     </div>
                 </div>
@@ -632,9 +580,6 @@ document.getElementById('cvBtn').addEventListener('click', function(e){
         </footer>
         <!--Footer End-->
         <!-- Dark Mode Toggle Button -->
-         <!-- Font Awesome 6 CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 <div class="theme-toggle">
   <i class="fa-solid fa-gear"></i>
 </div>
@@ -742,6 +687,10 @@ body.dark-mode .theme-toggle {
         <script src="assets/js/main.js"></script>
 
         <script src="assets/js/main1.js"></script>
+
+        <!-- aos js link -->
+         <!-- AOS JS -->
+
 
     </body>
 </html>
