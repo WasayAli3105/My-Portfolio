@@ -3,6 +3,8 @@
     <head>
         <title>My Portfolio</title>
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- favicon -->
         <link href="assets/images/letter-w.png" rel="icon" type="image/png">
 
@@ -37,7 +39,6 @@
   <!-- Font Awesome 6 CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<!-- aos library link -->
     </head>
     <body>
 
@@ -54,6 +55,12 @@
                 <a class='navbar-brand logo' href='index.html'>
                   WASAY
                 </a>
+<style>
+    body.dark-mode #home-svg .p-curve {
+    fill: #1a1a1a; /* Apne dark mode background se match karega */
+}
+
+</style>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -122,173 +129,170 @@
 
         <!--Home Section End-->
 
-        <!--About Section Start-->
-        <section class="about pt-100 pb-100" data-scroll-index="1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6">
-                        <!--About Image-->
-                        <div class="about-img">
-                            <img src="assets/images/5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6">
-                        <!--About Content-->
-                        <div class="about-content">
-                            <div class="about-heading">
-                                <h2>About Me</h2>
-                                <span>Software Engineer | Web Developer</span>
-                            </div>
-                            <p>I'm <b>Abdul Wasay Ali</b> I’m a passionate and ambitious student currently enrolled in a 3-year Diploma in Software Engineering with a specialization in Artificial Intelligence. Before this, I completed a 1-year Intermatric program under SBTE from Aptech, following my matriculation.</p>
-                            <p>My interests lie in programming, problem-solving, and applying AI to real-world challenges. I’m gaining hands-on experience with technologies like HTML5/CSS, Bootstrap, JavaScript, PHP, MYSQL, Laravel, C#, Microsoft Sql Server, Asp.Net Mvc, .Net Framework and exploring areas such as machine learning and data science.</p>
-                            <p>I'm always eager to learn, build, and collaborate. Currently looking for opportunities to work on projects, internships, and expand my network in the tech industry.</p>
-                            <!--About Social Icons-->
-                            <div class="social-icons">
-                               <a href="https://www.facebook.com/share/16UkcssCFn/"><i class="fab fa-facebook"></i></a>
-<a href="https://x.com/WasayAli1957728?t=2xm4HzrteL68q2AISbcDPQ&s=09"><i class="fab fa-twitter"></i></a>
-<a href="https://www.instagram.com/abdulwasayali09?igsh=MXd2bG00dzdmaDZyYw=="><i class="fab fa-instagram"></i></a>
-<a href="https://www.linkedin.com/in/abdul-wasay-ali-295480256/"><i class="fab fa-linkedin-in"></i></a>
-<a href="https://github.com/WasayAli3105"><i class="fab fa-github"></i></a>
-
-                            </div>
-                         <span class="about-button">
-    <a class="main-btn" href="assets/My Resume.pdf" id="cvBtn">Download Resume</a>
-</span>
-                        </div>
-                    </div>
+       <!--About Section Start-->
+<section class="about pt-100 pb-100" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <!--About Image-->
+                <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="assets/images/5.jpg" alt="">
                 </div>
             </div>
-        </section>
-        <!--About Section End-->
-
-        <!--Services Section Start-->
-        <section class="services bg-gray pt-100 pb-50" data-scroll-index="2">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="heading text-center">
-                            <h6>My skills</h6>
-                            <h2>What I Can Do</h2>
-                        </div>
+            <div class="col-lg-7 col-md-6">
+                <!--About Content-->
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-heading" data-aos="fade-up" data-aos-delay="200">
+                        <h2>About Me</h2>
+                        <span>Software Engineer | Web Developer</span>
                     </div>
-                </div>
-                <div class="row">
-                     <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                               <i class="fab fa-microsoft fa-2x"></i>
-                            </span>
-                            <h4>MS Office</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
+                    <p data-aos="fade-up" data-aos-delay="300">I'm <b>Abdul Wasay Ali</b> I'm a passionate and ambitious student currently enrolled in a 3-year Diploma in Software Engineering with a specialization in Artificial Intelligence. Before this, I completed a 1-year Intermatric program under SBTE from Aptech, following my matriculation.</p>
+                    <p data-aos="fade-up" data-aos-delay="400">My interests lie in programming, problem-solving, and applying AI to real-world challenges. I'm gaining hands-on experience with technologies like HTML5/CSS, Bootstrap, JavaScript, PHP, MYSQL, Laravel, C#, Microsoft Sql Server, Asp.Net Mvc, .Net Framework and exploring areas such as machine learning and data science.</p>
+                    <p data-aos="fade-up" data-aos-delay="500">I'm always eager to learn, build, and collaborate. Currently looking for opportunities to work on projects, internships, and expand my network in the tech industry.</p>
+                    <!--About Social Icons-->
+                    <div class="social-icons" data-aos="zoom-in" data-aos-delay="600">
+                       <a href="https://www.facebook.com/share/16UkcssCFn/"><i class="fab fa-facebook"></i></a>
+                       <a href="https://x.com/WasayAli1957728?t=2xm4HzrteL68q2AISbcDPQ&s=09"><i class="fab fa-twitter"></i></a>
+                       <a href="https://www.instagram.com/abdulwasayali09?igsh=MXd2bG00dzdmaDZyYw=="><i class="fab fa-instagram"></i></a>
+                       <a href="https://www.linkedin.com/in/abdul-wasay-ali-295480256/"><i class="fab fa-linkedin-in"></i></a>
+                       <a href="https://github.com/WasayAli3105"><i class="fab fa-github"></i></a>
                     </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                             
-
-                               <i class="fab fa-html5 fa-2x"></i>
-                            </span>
-                            <h4>HTML5</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-css3-alt fa-2x"></i>
-                            </span>
-                            <h4>CSS3</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-js fa-2x"></i>
-                            </span>
-                            <h4>JavaScript</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-bootstrap fa-2x"></i>
-                            </span>
-                            <h4>Bootstrap</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-git-alt fa-2x"></i>
-                            </span>
-                            <h4>Git</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-github-alt fa-2x"></i>
-                            </span>
-                            <h4>Github</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-php fa-2x"></i>
-                            </span>
-                            <h4>Php</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fas fa-database fa-2x"></i>
-                            </span>
-                            <h4>Mysql</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fab fa-laravel fa-2x"></i>
-                            </span>
-                            <h4>Laravel</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
-                     <div class="col-md-4">
-                        <!--Service Item-->
-                        <div class="service-item">
-                            <span class="icon">
-                                <i class="fas fa-laptop-code fa-2x"></i>
-                            </span>
-                            <h4>C#/.NET</h4>
-                            <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-                        </div>
-                    </div>
+                
+                    <span class="about-button" data-aos="fade-up" data-aos-delay="700">
+                        <a class="main-btn" href="assets/My Resume.pdf" id="cvBtn">Download Resume</a>
+                    </span>
                 </div>
             </div>
-        </section>
-        <!--Services Section End-->
+        </div>
+    </div>
+</section>
+<!--About Section End-->
+       <!--Services Section Start-->
+<section class="services bg-gray pt-100 pb-50" data-scroll-index="2">
+    <div class="container">
+        <div class="row">
+            <div class="col" data-aos="fade-up">
+                <div class="heading text-center">
+                    <h6>My skills</h6>
+                    <h2>What I Can Do</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                       <i class="fab fa-microsoft fa-2x"></i>
+                    </span>
+                    <h4>MS Office</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                       <i class="fab fa-html5 fa-2x"></i>
+                    </span>
+                    <h4>HTML5</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                    </span>
+                    <h4>CSS3</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-js fa-2x"></i>
+                    </span>
+                    <h4>JavaScript</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-bootstrap fa-2x"></i>
+                    </span>
+                    <h4>Bootstrap</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-git-alt fa-2x"></i>
+                    </span>
+                    <h4>Git</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-github-alt fa-2x"></i>
+                    </span>
+                    <h4>Github</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-php fa-2x"></i>
+                    </span>
+                    <h4>Php</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fas fa-database fa-2x"></i>
+                    </span>
+                    <h4>Mysql</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fab fa-laravel fa-2x"></i>
+                    </span>
+                    <h4>Laravel</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <!--Service Item-->
+                <div class="service-item">
+                    <span class="icon">
+                        <i class="fas fa-laptop-code fa-2x"></i>
+                    </span>
+                    <h4>C#/.NET</h4>
+                    <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Services Section End-->
 
        
 
@@ -484,20 +488,46 @@ Server, offering birthday and wishes cards with admin panel control.</p>
 
        
 
-        <!--Contact Section Start-->
-        <section class="contact pt-100 pb-100" data-scroll-index="5">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="heading">
-                            <h6>Contact</h6>
-                            <h2>Get In Touch</h2>
-                        </div>
-                    </div>
+       <!--Contact Section Start-->
+<section class="contact pt-100 pb-100" data-scroll-index="5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="heading" data-aos="fade-up">
+                    <h6>Contact</h6>
+                    <h2>Get In Touch</h2>
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <!--Contact Form-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <!--Contact Form-->
+
+<form id="contact-form" action="https://formsubmit.co/Wasay3105@gmail.com" method="POST" novalidate data-aos="fade-up" data-aos-delay="200">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+
+    <div class="row">
+        <div class="col-md-6 form-group" data-aos="fade-right" data-aos-delay="300">
+            <input type="text" class="form-control con-validate" id="name" name="name" placeholder="Name">
+            <div class="error-message" id="name-error">Please enter a valid name</div>
+        </div>
+
+        <div class="col-md-6 form-group" data-aos="fade-left" data-aos-delay="300">
+            <input type="email" class="form-control con-validate" id="email" name="email" placeholder="Email">
+            <div class="error-message" id="email-error">Please enter a valid email address</div>
+        </div>
+
+        <div class="col-md-12 form-group" data-aos="fade-up" data-aos-delay="400">
+            <textarea class="form-control con-validate" id="message" name="message" placeholder="How can we help you?" rows="6"></textarea>
+            <div class="error-message" id="message-error">Please enter your message</div>
+        </div>
+
+        <div class="col-md-12 text-center" data-aos="zoom-in" data-aos-delay="500">
+            <button type="submit" class="mt-30 main-btn">Send Message</button>
+        </div>
+    </div>
+</form>
                      <style>
     .error-border {
         border: 2px solid #dc3545 !important;
@@ -531,33 +561,6 @@ Server, offering birthday and wishes cards with admin panel control.</p>
         display: block;
     }
 </style>
-
-<form id="contact-form" action="https://formsubmit.co/Wasay3105@gmail.com" method="POST" novalidate>
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
-
-    <div class="row">
-        <div class="col-md-6 form-group">
-            <input type="text" class="form-control con-validate" id="name" name="name" placeholder="Name">
-            <div class="error-message" id="name-error">Please enter a valid name</div>
-        </div>
-
-        <div class="col-md-6 form-group">
-            <input type="email" class="form-control con-validate" id="email" name="email" placeholder="Email">
-            <div class="error-message" id="email-error">Please enter a valid email address</div>
-        </div>
-
-        <div class="col-md-12 form-group">
-            <textarea class="form-control con-validate" id="message" name="message" placeholder="How can we help you?" rows="6"></textarea>
-            <div class="error-message" id="message-error">Please enter your message</div>
-        </div>
-
-        <div class="col-md-12 text-center">
-            <button type="submit" class="mt-30 main-btn">Send Message</button>
-        </div>
-    </div>
-</form>
-
 <script>
     const form = document.getElementById("contact-form");
     const nameInput = document.getElementById("name");
@@ -920,6 +923,33 @@ Server, offering birthday and wishes cards with admin panel control.</p>
     <i class="fas fa-moon"></i>
 </button>
 <style>
+    /* ----------- FIX FOR DARK MODE CARD ---------- */
+
+/* Blue overlay ko remove karna */
+body.dark-mode .portfolio-card .overlay {
+    background: transparent !important;
+}
+
+/* Image hamesha transparent ho dark mode mein */
+body.dark-mode .portfolio-card img {
+    opacity: 0.55 !important;
+}
+
+/* Text permanently uper show ho */
+body.dark-mode .portfolio-card .content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    z-index: 2;
+}
+
+/* Hover par bhi same effect rahe */
+body.dark-mode .portfolio-card:hover img {
+    opacity: 0.55 !important;
+}
+
 /* Floating Dark Mode Toggle Button - Bottom Right */
 .dark-mode-floating-btn {
     position: fixed;
@@ -1072,6 +1102,47 @@ body.dark-mode .about-img img {
         right: 20px;
     }
 }
+body.dark-mode .navbar-brand {
+    color: #ffffff !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+body.dark-mode .navbar-nav .nav-link.active {
+    
+    border-bottom: 2px solid #ffffff !important;
+}
+
+body.dark-mode .navbar-nav .nav-link.active::after {
+    background-color: #ffffff !important;
+}
+/* 🌙 Dark Mode Social Icons */
+body.dark-mode .social-icons a {
+    width: 45px;
+    height: 45px;
+    background: #000 !important;
+    color: #fff !important;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: 0.3s ease;
+    border: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* 🌙 DARK MODE HOVER — FORCE APPLY */
+body.dark-mode .social-icons a:hover {
+    transform: scale(1.12) !important;   /* <- This is the fix */
+    background: #000 !important;
+    color: #fff !important;
+}
+
+
 </style>
 <script>
 // Dark Mode Toggle Functionality
@@ -1108,7 +1179,26 @@ darkModeToggle.addEventListener('click', () => {
 });
 </script>
 
+<style>
+    /* Portfolio Filter Buttons Dark Mode */
+body.dark-mode .portfolio-filter .filter-btn {
+    background-color: #000000;
+    color: #ffffff !important;
+    border: 1px solid #3a3a3a;
+}
 
+body.dark-mode .portfolio-filter .filter-btn:hover {
+    background-color: #ff6347;
+    color: #ffffff !important;
+    border-color: #ff6347;
+}
+
+body.dark-mode .portfolio-filter .filter-btn.active {
+    background-color: #ff6347;
+    color: #ffffff !important;
+    border-color: #ff6347;
+}
+</style>
         <!--Jquery js-->
         <script src="assets/js/jquery.min.js"></script>
         <!--Bootstrap js-->
@@ -1131,7 +1221,12 @@ darkModeToggle.addEventListener('click', () => {
         <script src="assets/js/main1.js"></script>
 
         <!-- aos js link -->
-         <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500,  // Animation ki speed (default: 400)
+  });
+</script>
 
 
     </body>
